@@ -1,18 +1,15 @@
-import { Navbar,Welcome,Footer,Services,Transactions} from "./components"
-const App = () => {
+import { Navbar, Welcome, Footer, Services, Transactions } from "./components";
 
-  return (
-    <div className="min-h-screen">
-      <div className="gradient-bg-welcome">
-        {/*these all components can use their code easily a multiple times also becoz of React's reusability*/}
-        <Navbar />  
-        <Welcome />
-      </div>
-      <Footer/>
-      <Services />
-      <Transactions />
+const App = () => (
+  <div className="min-h-screen">
+    <div className="gradient-bg-welcome">
+      <Navbar />
+      <Welcome />
     </div>
-  )
-}
+    <Services />
+    <Transactions />
+    <Footer />
+  </div>
+);
 
-export default App
+export default App;
