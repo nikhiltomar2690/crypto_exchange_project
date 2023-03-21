@@ -1,11 +1,15 @@
 require('@nomiclabs/hardhat-waffle');
 
+const ALCHEMY_API_KEY = "PLSDE-xO7kxouTBtK3Z9SytucobbxqxW";
+
+const GOERLI_PRIVATE_KEY = "021da5ccf382b8a98df10e658fdf417d1ef009a5611e55f6c7316b951c6b1296";
+
 module.exports = {
   solidity: '0.8.0',
   networks: {
-    ropsten: {
-      url: 'https://eth-ropsten.alchemyapi.io/v2/z4WpA8UKgqnwbTYmrZu15yCOiijBKaRv',
-      accounts: ['2f99db8cdb04655028eee1dc98230925202f6b3e010e43fad2883b4bea90a1a3'],
+    goerli: {
+      url: `https://eth-goerli.g.alchemy.com/v2/${ALCHEMY_API_KEY}`,
+    accounts: [`${GOERLI_PRIVATE_KEY}`],
     },
   },
 };
