@@ -79,6 +79,10 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
+.blak{
+  background-image: linear-gradient(to bottom, #000000, #2D3436);
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
